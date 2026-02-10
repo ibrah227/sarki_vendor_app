@@ -97,30 +97,62 @@
         </h1>
 
         <p
-            class="text-base sm:text-xl text-gray-600 mb-8 max-w-xl mx-auto leading-relaxed animate-slide-up delay-100 px-2">
+            class="text-base sm:text-xl text-gray-600 mb-4 max-w-xl mx-auto leading-relaxed animate-slide-up delay-100 px-2">
             Fini les cahiers ! Suivez vos ventes, vos dettes et vos stocks facilement. Une app conçue pour les
             commerçants du Niger.
         </p>
 
+        <div class="mb-8 animate-slide-up delay-200">
+            <span
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 text-orange-700 text-xs font-semibold border border-orange-200">
+                <i class="fab fa-android"></i> Accès anticipé uniquement sur Android
+            </span>
+        </div>
+
         <!-- Trust Badges (Scrollable on mobile) -->
+        <!-- Key Features Badges -->
+        <div class="flex flex-wrap justify-center gap-3 sm:gap-4 mb-8 animate-fade-in delay-200 px-4">
+            <span
+                class="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-green-50 text-green-700 text-[10px] sm:text-xs font-bold rounded-full border border-green-100 shadow-sm whitespace-nowrap">
+                <i class="fas fa-check-circle"></i> GRATUIT
+            </span>
+            <span
+                class="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-yellow-50 text-yellow-700 text-[10px] sm:text-xs font-bold rounded-full border border-yellow-100 shadow-sm whitespace-nowrap">
+                <i class="fas fa-motorcycle"></i> LIVRAISON INCLUSE
+            </span>
+            <span
+                class="inline-flex items-center gap-2 px-3 py-1.5 sm:px-4 sm:py-2 bg-purple-50 text-purple-700 text-[10px] sm:text-xs font-bold rounded-full border border-purple-100 shadow-sm whitespace-nowrap">
+                <i class="fas fa-bolt"></i> RAPIDE
+            </span>
+        </div>
+
+        <!-- Location Availability -->
         <div
-            class="flex flex-nowrap sm:flex-wrap justify-start sm:justify-center overflow-x-auto gap-4 px-4 pb-4 sm:pb-0 sm:px-0 text-xs sm:text-sm font-semibold uppercase tracking-wider text-gray-500 animate-fade-in delay-200 snap-x">
+            class="bg-gradient-to-r from-gray-50 to-white rounded-2xl p-4 sm:p-5 mx-4 max-w-3xl sm:mx-auto border border-gray-100 shadow-sm animate-slide-up delay-300 relative overflow-hidden group">
             <div
-                class="flex-none snap-center flex items-center gap-1.5 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
-                <i class="fas fa-check-circle text-green-500"></i> Gratuit
+                class="absolute top-0 right-0 w-20 h-20 bg-blue-500/5 rounded-full blur-xl -mr-10 -mt-10 transition group-hover:bg-blue-500/10">
             </div>
-            <div
-                class="flex-none snap-center flex items-center gap-1.5 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100">
-                <i class="fas fa-motorcycle text-yellow-500"></i> Livraison incluse
-            </div>
-            <div
-                class="flex-none snap-center flex items-center gap-1.5 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100 whitespace-nowrap">
-                <i class="fas fa-map-pin text-red-500"></i> Niamey, Maradi, Zinder, Dosso, Tillabery, Tahoua, Agadez,
-                Diffa
-            </div>
-            <div
-                class="flex-none snap-center flex items-center gap-1.5 bg-gray-50 px-3 py-1.5 rounded-full border border-gray-100 whitespace-nowrap">
-                <i class="fas fa-globe text-blue-500"></i> Bientôt International
+
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-6 text-center relative z-10">
+                <div class="flex items-center gap-2 text-gray-900 font-bold mb-1 sm:mb-0">
+                    <span class="flex items-center justify-center w-8 h-8 bg-white rounded-full shadow-sm text-red-500">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </span>
+                    <span class="text-sm sm:text-base">DISPONIBLE À</span>
+                </div>
+
+                <div class="flex flex-col sm:items-start">
+                    <p class="text-xs sm:text-sm text-gray-600 font-medium leading-relaxed max-w-md mx-auto">
+                        Niamey • Maradi • Zinder • Dosso • Tillabery • Tahoua • Agadez • Diffa
+                    </p>
+                </div>
+
+                <div class="hidden sm:block w-px h-8 bg-gray-200"></div>
+
+                <span
+                    class="text-[10px] sm:text-xs text-blue-600 font-bold bg-blue-50 px-3 py-1 rounded-full mt-2 sm:mt-0 border border-blue-100">
+                    <i class="fas fa-globe mr-1"></i> Bientôt International
+                </span>
             </div>
         </div>
     </main>
@@ -224,11 +256,16 @@
     <!-- Sticky Mobile Bottom Bar -->
     <div
         class="fixed bottom-0 left-0 w-full p-4 bg-white/90 backdrop-blur-lg border-t border-gray-200 z-50 sm:hidden animate-slide-up-slow shadow-[0_-5px_20px_rgba(0,0,0,0.1)]">
-        <a href="https://github.com/ibrah227/sarki_vendor/releases/download/v1.0.0-beta/sarki_vendor.apk"
-            class="flex items-center justify-center w-full bg-black text-white font-bold py-3.5 px-6 rounded-xl hover:bg-gray-800 transition shadow-lg active:scale-95 transform duration-150">
-            <i class="fab fa-android mr-2 text-green-400 text-lg"></i>
-            Télécharger l'APK
-        </a>
+        <div class="flex flex-col gap-2">
+            <div class="text-xs text-center text-orange-600 font-medium mb-1">
+                ⚠️ Disponible uniquement sur Android
+            </div>
+            <a href="https://github.com/ibrah227/sarki_vendor/releases/download/v1.0.0-beta/sarki_vendor.apk"
+                class="flex items-center justify-center w-full bg-black text-white font-bold py-3.5 px-6 rounded-xl hover:bg-gray-800 transition shadow-lg active:scale-95 transform duration-150">
+                <i class="fab fa-android mr-2 text-green-400 text-lg"></i>
+                Télécharger l'APK
+            </a>
+        </div>
     </div>
 
     <!-- Scroll & Animation Script -->
